@@ -1,6 +1,9 @@
 # 🚀 Trackr – Job Application Tracker  
 
-Trackr is a **full-stack job application tracking system** that helps users manage their job search journey in one place. It allows you to save job postings, track application status, update progress, and stay organized with a clean dashboard.  
+Trackr is a **full-stack job application tracking system** that helps users manage their job search journey in one place. It allows you to save job postings, track application status, update progress, and stay organized with a clean dashboard. 
+
+Glimpses of the Application's dashboard is:
+![Dashboard](dashboard.png)
 
 ---
 
