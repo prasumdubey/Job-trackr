@@ -1,0 +1,108 @@
+.navbar {
+  position: fixed;
+  height: 80px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #EFF1F8;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #010001;
+}
+
+.nav-links,.logout-link {
+  display: flex;
+  gap: 3.8rem;
+  align-items: center;
+}
+
+.nav-links a, .logout-link {
+  text-decoration: none;
+  color: #010001;
+  font-weight: 600;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links img {
+  width: 3.6rem;
+  border: 3px solid black;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.nav-links img:hover {
+  transform: scale(1.03);
+}
+
+.nav-links a:hover {
+  color: #7F5DF6;
+}
+
+/* Hidden hamburger menu by default */
+.hamburger {
+  display: none;
+}
+
+/* ✅ Responsive for small screens only */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    height: auto; /* Let it grow with content */
+    padding-bottom: 1rem;
+  }
+
+  .navbar-brand {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 1100;
+  }
+
+  .bar {
+    height: 4px;
+    width: 28px;
+    background-color: #010001;
+    margin: 4px 0;
+    border-radius: 5px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #EFF1F8;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-links.active {
+  max-height: 400px;
+  padding-bottom: 0.5rem; /* was 1rem */
+  margin-top: 0; /* optional */
+}
+}

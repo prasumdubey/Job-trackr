@@ -1,0 +1,169 @@
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #EFF1F8;
+  padding: 50px 2vw 3rem;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 100px;
+}
+
+
+
+.input-form-page {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  min-height: 0vh;        /* take full height of screen */
+  background-color: #f3f4f6; /* light background for contrast */
+  padding: 1rem;
+
+}
+
+.input-form-container {
+  background: white;
+  padding: 2rem 4rem 2rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;              /* take full width */
+  max-width: none;          /* remove width limit */
+  margin: 0 auto;           /* keep it centered if needed */
+}
+
+
+.title-container h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+.mode-switch {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #d1d5db; /* line under the whole switch area */
+}
+
+.mode-switch button {
+  flex: 1;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent; /* only bottom line, hidden by default */
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  color: #555;
+}
+
+.mode-switch button:hover {
+  color: #1E3A8A;
+  background-color: white;
+
+}
+
+.mode-switch button.active {
+  border-bottom: 3px solid #1E3A8A; /* visible bottom line when active */
+  color: #1E3A8A;
+  font-weight: bold;
+  background: none;
+}
+
+/* Manual form grid */
+.manual-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 fields per row */
+  gap: 1.2rem 5rem; /* row-gap and column-gap */
+}
+
+.manual-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.manual-form label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+.manual-form input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Buttons row stays same but aligns better with grid */
+.btn-row {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.reset-btn {
+  background-color: #209ca0;
+  color: #fff;
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.reset-btn:hover {
+  background-color: #255355;
+  transform: translateY(-2px);
+}
+
+.reset-btn:active {
+  background-color: #209ca0;
+  color: #fff;
+  transform: translateY(0);
+  border: 2px solid #209ca0;
+}
+
+.submit-btn {
+  background-color: #1E3A8A;
+  color: #fff;
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #2b385e;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  background-color: #1E3A8A;
+  color: #fff;
+  transform: translateY(0);
+  border: 2px solid #1E3A8A;
+}
+
+.job-description {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+
+}
+
+.job-description:focus {
+  border-color: #7F5DF6;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(127, 93, 246, 0.2);
+}

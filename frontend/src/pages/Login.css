@@ -1,0 +1,141 @@
+
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #EFF1F8;
+  padding: 50px 2vw 3rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.login-illustration img {
+  border-radius: 45px;
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  filter: drop-shadow(0px 5px 25px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.login-illustration img:hover {
+  transform: scale(1.03);
+}
+
+.login-form-container {
+  flex: 1;
+  border-radius: 50px;
+  max-width: 50%;
+  width: 800px;
+  background: #EFF1F8;
+  padding: 2rem 2rem;
+  filter: drop-shadow(0px 5px 25px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.login-form-container:hover {
+  transform: scale(1.03);
+}
+
+.login-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.login-title h2 {
+  font-size: 3.25rem;
+  color: #1e293b;
+  font-weight: 700;
+  margin: 0;
+}
+
+.form-group {
+    margin-right: 1.5rem;
+}
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-form-container label {
+  font-weight: 600;
+  color: #344054;
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+}
+
+.login-form-container input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  background-color: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+.login-form-container input:focus {
+  border-color: #7F5DF6;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(127, 93, 246, 0.2);
+}
+
+.login-btn {
+  background-color: #1E3A8A;
+  color: #fff;
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+  margin-top: 1.5rem;
+}
+
+.login-btn:hover {
+  background-color: #2b385e;
+  transform: translateY(-2px);
+}
+
+.login-btn:active {
+  background-color: #1E3A8A;
+  color: #fff;
+  transform: translateY(0);
+  border: 2px solid #1E3A8A;
+}
+
+.redirect-link:hover{
+  cursor: pointer;
+  color:#2b385e;
+}
+
+@media screen and (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .login-illustration img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .login-form-container {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
