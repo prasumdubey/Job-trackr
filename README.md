@@ -41,6 +41,7 @@ Trackr is a **full-stack job application tracking system** that helps users mana
 ## ⚙️ Installation & Setup  
 
 ### 1️⃣ Clone the Repository  
+Open Terminal and write these command
 ```bash
 git clone https://github.com/dubeyprashant1/Trackr.git
 cd trackr
@@ -65,41 +66,29 @@ AZURE_OPENAI_API_VERSION=your_Azure_OpenAI_API_Version
 ```
 
 ### Frontend Setup (React)
+Open another Terminal and write these commands
 ```bash
-cd frontend
+cd trackr\forntend
 npm install
 npm run dev
 ```
 
 ## 🖥 Usage
 
-Sign up or log in to your account
-
-Add job applications with details (Company, Role, Status, Description)
-
-Track your progress directly from the dashboard
-
-Update status as you move through application stages
+- Sign up or log in to your account
+- Add job applications with details (Company, Role, Status, Description)
+- Track your progress directly from the dashboard
+- Update status as you move through application stages
 
 
 ## 🤝 Contributing
 
-Contributions are welcome!
-
-Fork the repo
-
-Create a new branch (feature/your-feature)
-
-Commit your changes
-
-Open a Pull Request
+- Contributions are welcome!
+- Fork the repo
+- Create a new branch (feature/your-feature)
+- Commit your changes
+- Open a Pull Request
 
 ## 📜 License
 
 This project is licensed under the MIT License.
-```bash
-
----
-
-👉 Do you also want me to **generate the boilerplate Node.js backend code** (Express + MongoDB + JWT routes for auth & jobs) so that you can directly start coding your Trackr backend?
-```
