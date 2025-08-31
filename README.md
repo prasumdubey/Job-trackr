@@ -46,7 +46,7 @@ Glimpses of the Application's dashboard is:
 ### 1️⃣ Clone the Repository  
 Open Terminal and write these command
 ```bash
-git clone https://github.com/dubeyprashant1/Trackr.git
+git clone https://github.com/prasumdubey/Job-trackr.git
 cd trackr
 ```
 
@@ -59,7 +59,7 @@ node app.js
 
 ### 3️⃣ Create a .env file in backend/ and add:
 ```bash
-PORT=5000
+PORT=your_port
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 AZURE_OPENAI_API_KEY=your_Azure_OpenAI_Key
